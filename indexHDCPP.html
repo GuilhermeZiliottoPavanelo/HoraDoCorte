@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HoraDoCorte</title>
+    <link rel="stylesheet" href="styleHDCPP.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body class="w3-sand">
+
+    <body class="w3-sand">
+
+        <header>
+            <nav>
+                <a href="#contact">Contato</a>
+                <a href="#barbers">Barbeiros</a>
+                <a href="#services">Serviços</a>
+                <a href="#booking">Agendamento</a>
+            </nav>
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#9776; <!-- Ícone de hamburguer -->
+            </div>
+        </header>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <ul>
+            <li><i class="fas fa-phone-alt"></i> Contato: (Seu número de telefone)</li>
+            <li><i class="fas fa-map-marker-alt"></i> Endereço: (Seu endereço)</li>
+            <li><i class="fas fa-envelope"></i> Email: (Seu email)</li>
+        </ul>
+    </section>
+
+    <section id="barbers">
+        <h2>Barbeiros</h2>
+        <div class="barber-card">
+            <img src="https://images.unsplash.com/photo-1578176603894-57973e38890f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80" alt="barbeiro">
+            <p><b>Michael</b> (proprietário)</p>
+        </div>
+        <!-- Adicione mais cartões de barbeiros conforme necessário -->
+    </section>
+
+    <section id="services">
+        <h2>Serviços</h2>
+        <ul>
+            <li>Corte de Cabelo</li>
+            <li>Barba</li>
+            <!-- Adicione mais serviços conforme necessário -->
+        </ul>
+    </section>
+
+
+    <section id="booking">
+        <h2>Agendamento</h2>
+        <!-- Formulário de Agendamento -->
+        <form id="booking-form">
+            <label for="date">Data:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Horário:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Agendar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 HoraDoCorte</p>
+        <a href="#" class="w3-button w3-light-grey">Voltar para o Topo</a>
+    </footer>
+
+    <script src="scriptHDCPP.js"></script>
+
+</body>
+</html>
