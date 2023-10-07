@@ -13,7 +13,6 @@ header {
     z-index: 1000;
     background-color: #333;
     color: #fff;
-    padding: 1em 0;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -21,6 +20,7 @@ header {
 nav {
     display: flex;
     justify-content: space-around;
+    align-items: center; /* Centraliza os itens verticalmente */
 }
 
 nav a {
@@ -112,9 +112,14 @@ footer {
         display: block;
         position: fixed;
         top: 20px;
-        right: 20px;
+        right: 60px;
         font-size: 24px;
         cursor: pointer;
+    }
+
+    .logo {
+        max-width: 100px; /* Ocupa a largura total disponível */
+        margin: 10px; /* Adiciona um espaço ao redor do logo */
     }
 }
 
@@ -132,4 +137,10 @@ footer {
 #booking-form input,
 #booking-form button {
     margin-top: 5px;
+}
+
+.logo {
+    max-width: 250px; /* Ajuste conforme necessário */
+    height: auto;
+    margin-right: 10px; /* Adiciona um espaço à direita do logo */
 }

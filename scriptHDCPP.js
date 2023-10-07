@@ -1,5 +1,4 @@
 // Adicione a seguinte função no script.js
-
 function toggleMenu() {
     const nav = document.querySelector('nav');
     nav.style.display = (nav.style.display === 'flex' || nav.style.display === '') ? 'none' : 'flex';
@@ -44,31 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Remover o link do corpo do documento
         document.body.removeChild(a);
-    });
-});
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    const bookingForm = document.getElementById('booking-form');
-
-    bookingForm.addEventListener('submit', function (event) {
-        event.preventDefault();
-
-        // Obter os valores do formulário
-        const name = document.getElementById('name').value;
-        const phone = document.getElementById('phone').value;
-        const email = document.getElementById('email').value;
-        const date = document.getElementById('date').value;
-        const time = document.getElementById('time').value;
-
-        // Criar um objeto de dados
-        const formData = {
-            name: name,
-            phone: phone,
-            email: email,
-            date: date,
-            time: time
-        };
 
         // Abrir uma nova janela para exibir o comprovante
         const confirmationWindow = window.open('', '_blank');
