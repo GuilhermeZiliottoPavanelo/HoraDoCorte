@@ -11,32 +11,89 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #333;
+    background-color: black;
     color: #fff;
+    padding: 5px 10px; /* Ajustei a altura da barra de navegação */
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav {
     display: flex;
-    justify-content: space-around;
-    align-items: center; /* Centraliza os itens verticalmente */
+    margin-left: auto; /* Move os itens para a direita */
+    justify-content: flex-end; /* Alinha os itens à direita */
 }
 
 nav a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+    font-size: 16px; /* Ajuste o tamanho da fonte */
     transition: color 0.3s ease;
+    margin: 0 20px; /* Adicionei margem para separar os links */
 }
 
 nav a:hover {
     color: #ff6f00;
 }
 
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.logo {
+    max-width: 140px; /* Aumentei o tamanho do logo */
+    height: auto;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: black;
+        display: none;
+        text-align: center;
+        margin-left: 0; /* Zere a margem para centralizar os itens quando responsivo */
+    }
+
+    nav.show {
+        display: flex;
+    }
+
+    nav a {
+        padding: 10px;
+        text-align: center;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 10px 0; /* Adicionei uma margem entre os itens quando responsivo */
+    }
+
+    .menu-icon {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+
+    .logo {
+        max-width: 100%; /* Faz o logo ocupar a largura total em telas menores */
+        margin: 10px auto; /* Centraliza o logo */
+    }
+}
+
 section {
     max-width: 800px;
-    margin: 100px auto 20px;
+    margin: 150px auto 20px; /* Ajuste da margem superior para reduzir o espaço entre as seções e descer mais as seções */
     padding: 20px;
     border: 1px solid #ddd;
     background-color: #fff;
@@ -54,12 +111,12 @@ li {
 }
 
 .barber-card {
-    background-color: #333;
+    background-color: black;
     color: #fff;
     text-align: center;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px black;
     margin-bottom: 20px;
 }
 
@@ -70,11 +127,11 @@ li {
 }
 
 footer {
-    background-color: #333;
+    background-color: black;
     color: #fff;
     text-align: center;
     padding: 1em 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px black;
 }
 
 .w3-btn {
@@ -91,36 +148,9 @@ footer {
     background-color: #e64a19;
 }
 
-@media only screen and (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        position: absolute;
-        top: 70px; /* Ajuste conforme necessário */
-        left: 0;
-        right: 0;
-        background-color: #333;
-        display: none;
-    }
-
-    nav a {
-        padding: 10px;
-        text-align: center;
-        display: block;
-    }
-
-    .menu-icon {
-        display: block;
-        position: fixed;
-        top: 20px;
-        right: 60px;
-        font-size: 24px;
-        cursor: pointer;
-    }
-
-    .logo {
-        max-width: 100px; /* Ocupa a largura total disponível */
-        margin: 10px; /* Adiciona um espaço ao redor do logo */
-    }
+/* Adicione a seguinte regra para mudar a cor do "Voltar ao Topo" para branco */
+footer .w3-button {
+    color: #fff;
 }
 
 #booking-form {
@@ -139,8 +169,38 @@ footer {
     margin-top: 5px;
 }
 
-.logo {
-    max-width: 250px; /* Ajuste conforme necessário */
-    height: auto;
-    margin-right: 10px; /* Adiciona um espaço à direita do logo */
+.styled-form {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.styled-form label {
+    display: block;
+    font-weight: bold;
+}
+
+.styled-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.styled-form button {
+    background-color: #ff6f00;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.styled-form button:hover {
+    background-color: #e64a19;
 }

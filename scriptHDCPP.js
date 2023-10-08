@@ -1,10 +1,11 @@
-// Adicione a seguinte função no script.js
-function toggleMenu() {
-    const nav = document.querySelector('nav');
-    nav.style.display = (nav.style.display === 'flex' || nav.style.display === '') ? 'none' : 'flex';
-}
-
 document.addEventListener('DOMContentLoaded', function () {
+    const nav = document.querySelector('nav');
+    const menuIcon = document.querySelector('.menu-icon');
+
+    menuIcon.addEventListener('click', function () {
+        nav.style.display = (nav.style.display === 'flex' || nav.style.display === '') ? 'none' : 'flex';
+    });
+
     const bookingForm = document.getElementById('booking-form');
 
     bookingForm.addEventListener('submit', function (event) {

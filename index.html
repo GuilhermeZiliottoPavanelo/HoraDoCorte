@@ -17,7 +17,7 @@
     <header>
         <img src="LogoHDC.png" alt="Logo da HoraDoCorte" class="logo">
         <div class="menu-icon" onclick="toggleMenu()">
-            &#9776; <!-- Ícone de hamburguer -->
+            &#9776; <!-- Ícone de hambúrguer -->
         </div>
         <nav id="main-nav">
             <a href="#contact">Contato</a>
@@ -57,30 +57,30 @@
 
     <section id="booking">
         <h2>Agendamento</h2>
-        <!-- Formulário de Agendamento -->
-        <form id="booking-form">
+        <!-- Formulário de Agendamento com estilo -->
+        <form id="booking-form" class="styled-form">
             <label for="name">Nome:</label>
             <input type="text" id="name" name="name" required>
-
+    
             <label for="phone">Telefone:</label>
             <input type="tel" id="phone" name="phone" required>
-
+    
             <label for="email">E-mail:</label>
             <input type="email" id="email" name="email" required>
-
+    
             <label for="date">Data:</label>
             <input type="date" id="date" name="date" required>
-
+    
             <label for="time">Horário:</label>
             <input type="time" id="time" name="time" required>
-
-            <button type="submit">Agendar</button>
+    
+            <button type="submit" class="w3-btn w3-orange">Agendar</button>
         </form>
     </section>
 
     <footer>
         <p>&copy; 2023 HoraDoCorte</p>
-        <a href="#" class="w3-button w3-light-grey">Voltar para o Topo</a>
+        <a href="#header" class="w3-button w3-light-grey">Voltar para o Topo</a>
     </footer>
 
     <script src="scriptHDCPP.js"></script>
