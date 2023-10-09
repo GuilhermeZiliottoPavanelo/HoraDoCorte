@@ -17,18 +17,50 @@
     <header>
         <img src="LogoHDC.png" alt="Logo da HoraDoCorte" class="logo">
         <div class="menu-icon" onclick="toggleMenu()">
-            &#9776; <!-- Ícone de hambúrguer -->
+            &#9776;
         </div>
         <nav id="main-nav">
-            <a href="#contact">Contato</a>
-            <a href="#barbers">Barbeiros</a>
-            <a href="#services">Serviços</a>
-            <a href="#booking">Agendamento</a>
+            <a href="#about-platform">A Plataforma</a>
+            <a href="#partner-barbershops">Barbearias Parceiras</a>
+            <a href="#support">Suporte</a>
         </nav>
     </header>
 
-    <section id="contact">
-        <h2>Contato</h2>
+    <section id="about-platform">
+        <h2>A Plataforma</h2>
+        <p>A HoraDoCorte é uma plataforma idealizada para ajudar barbearias no agendamento de serviços. Nossa missão
+            é simplificar o processo de agendamento, proporcionando uma experiência eficiente tanto para os
+            barbeiros quanto para os clientes. Junte-se a nós e melhore a gestão do seu negócio.</p>
+    </section>
+
+    <section id="partner-barbershops">
+        <h2>Barbearias Parceiras</h2>
+
+        <div class="barber-card">
+            <img src="https://hiperletras.com.br/wp-content/uploads/2022/01/Empresa-de-fachadas-para-barbearia-Pedreira.png"
+                alt="barbeiro">
+            <p><b>Barber Shop</b></p>
+            <p>Fortaleza-CE</p>
+        </div>
+
+        <div class="barber-card">
+            <img src="https://i.pinimg.com/564x/eb/87/ca/eb87cacb6fd8c95c7ab0b2a5afe04244.jpg"
+                alt="barbeiro">
+            <p><b></b>Bar Ber Bos</p>
+            <p>Diadema-SP</p>
+        </div>
+
+        <div class="barber-card">
+            <img src="https://i.pinimg.com/736x/c3/28/73/c3287343854b49cb79b65f19728e882f.jpg"
+                alt="barbeiro">
+            <p><b></b>Barbearia do Zé</p>
+            <p>Rio de Janeiro-RJ</p>
+        </div>
+       
+    </section>
+
+    <section id="support">
+        <h2>Suporte</h2>
         <ul>
             <li><i class="fas fa-phone-alt"></i> Contato: (Seu número de telefone)</li>
             <li><i class="fas fa-map-marker-alt"></i> Endereço: (Seu endereço)</li>
@@ -36,51 +68,8 @@
         </ul>
     </section>
 
-    <section id="barbers">
-        <h2>Barbeiros</h2>
-        <div class="barber-card">
-            <img src="https://images.unsplash.com/photo-1578176603894-57973e38890f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80"
-                alt="barbeiro">
-            <p><b>Michael</b> (proprietário)</p>
-        </div>
-        <!-- Adicione mais cartões de barbeiros conforme necessário -->
-    </section>
-
-    <section id="services">
-        <h2>Serviços</h2>
-        <ul>
-            <li>Corte de Cabelo</li>
-            <li>Barba</li>
-            <!-- Adicione mais serviços conforme necessário -->
-        </ul>
-    </section>
-
-    <section id="booking">
-        <h2>Agendamento</h2>
-        <!-- Formulário de Agendamento com estilo -->
-        <form id="booking-form" class="styled-form">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
-    
-            <label for="phone">Telefone:</label>
-            <input type="tel" id="phone" name="phone" required>
-    
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-    
-            <label for="date">Data:</label>
-            <input type="date" id="date" name="date" required>
-    
-            <label for="time">Horário:</label>
-            <input type="time" id="time" name="time" required>
-    
-            <button type="submit" class="w3-btn w3-orange">Agendar</button>
-        </form>
-    </section>
-
     <footer>
         <p>&copy; 2023 HoraDoCorte</p>
-        <a href="#header" class="w3-button w3-light-grey">Voltar para o Topo</a>
     </footer>
 
     <script src="scriptHDCPP.js"></script>
