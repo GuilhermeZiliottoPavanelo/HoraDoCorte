@@ -11,11 +11,11 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: black;
+    background-color: rgb(39, 39, 39);
     color: #fff;
     padding: 5px 10px;
     text-align: center;
-    box-shadow: 0 2px 5px black;
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,7 +59,7 @@ nav a:hover {
         top: 60px;
         left: 0;
         right: 0;
-        background-color: black;
+        background-color: rgb(0, 0, 0);
         display: none;
         text-align: center;
         margin-left: 0;
@@ -111,12 +111,12 @@ li {
 }
 
 .barber-card {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: #fff;
     text-align: center;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
     margin-bottom: 20px;
 }
 
@@ -127,15 +127,15 @@ li {
 }
 
 footer {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: #fff;
     text-align: center;
     padding: 1em 0;
-    box-shadow: 0 2px 5px black;
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
 }
 
 .w3-btn {
-    background-color: #ff6f00;
+    background-color: #000000;
     color: #fff;
     font-size: 18px;
     padding: 15px 30px;
@@ -145,5 +145,5 @@ footer {
 }
 
 .w3-btn:hover {
-    background-color: #e64a19;
+    background-color: #000000;
 }
