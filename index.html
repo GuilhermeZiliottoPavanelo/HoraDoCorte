@@ -59,6 +59,34 @@
        
     </section>
 
+    <section id="appointment-form">
+        <h2>Agendamento</h2>
+        <form action="#" method="post">
+
+            <label for="services">Escolha o serviço:</label>
+            <select id="services" name="services">
+                <option value="corte">Corte de Cabelo</option>
+                <option value="barba">Barba</option>
+                <option value="combo">Combo (Corte + Barba)</option>
+            </select>
+
+            <label for="barbershop">Escolha a barbearia:</label>
+            <select id="barbershop" name="barbershop" class="barbershop">
+                <option value="barbershop1">Barbearia 1</option>
+                <option value="barbershop2">Barbearia 2</option>
+                <option value="barbershop3">Barbearia 3</option>
+            </select>
+
+            <label for="date">Escolha a data:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Escolha o horário:</label>
+            <input type="time" id="time" name="time" required>
+
+            <input type="submit" value="Agendar">
+        </form>
+    </section>
+
     <section id="support">
         <h2>Suporte</h2>
         <ul>
